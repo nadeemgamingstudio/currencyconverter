@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Brick Game</title>
+    <link rel="icon" href="https://raw.githubusercontent.com/nadeemgamingstudio/brickgame/refs/heads/main/Icon.png" type="image/png">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #2470a5;
+            --secondary-color: #0d1520;
+            --accent-color: #00C6FF;
+            --accent-gold: #FFD700;
+            --text-color: #333;
+            --light-bg: #f8f9fa;
+            --dark-bg: #14212e;
+            --card-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --gradient-primary: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            --gradient-accent: linear-gradient(135deg, var(--accent-color) 0%, var(--accent-gold) 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+            color: #333;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+            border-radius: 0 0 30px 30px;
+            padding: 60px 0;
+            margin-bottom: 60px;
+            color: white;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, #00C6FF, #FFD700, #00C6FF);
+            background-size: 200% 100%;
+            animation: shimmer 3s infinite linear;
+        }
+
+        @keyframes shimmer {
+            0% { background-position: -200% 0; }
+            100% { background-position: 200% 0; }
+        }
+
+        .header-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .game-icon {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 30px;
+            border-radius: 30px;
+            border: 5px solid var(--accent-color);
+            box-shadow: 0 15px 35px rgba(0, 198, 255, 0.4);
+            overflow: hidden;
+            background: white;
+            padding: 15px;
+            transition: var(--transition);
+        }
+
+        .game-icon:hover {
+            transform: rotate(5deg) scale(1.05);
+            box-shadow: 0 20px 50px rgba(0, 198, 255, 0.6);
+        }
+
+        .game-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 20px;
+        }
+
+        .game-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+            background: linear-gradient(to right, #00C6FF, #FFD700);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .page-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .last-updated {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .effective-date {
+            color: var(--accent-color);
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 40px 0;
+            margin-bottom: 80px;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .content-card {
+            background: white;
+            border-radius: 25px;
+            padding: 40px;
+            box-shadow: var(--card-shadow);
+            transition: var(--transition);
+            border: 2px solid transparent;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .content-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--accent-color);
+            box-shadow: 0 25px 50px rgba(0, 198, 255, 0.15);
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid var(--accent-color);
+        }
+
+        .card-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--accent-color) 0%, var(--primary-color) 100%);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            color: white;
+            box-shadow: 0 10px 20px rgba(0, 198, 255, 0.3);
+        }
+
+        .card-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            line-height: 1.3;
+        }
+
+        .card-content {
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.8;
+            flex-grow: 1;
+        }
+
+        .card-content p {
+            margin-bottom: 20px;
+        }
+
+        .card-content ul, .card-content ol {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .card-content li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 10px;
+        }
+
+        .card-content li:before {
+            content: '•';
+            color: var(--accent-color);
+            font-weight: bold;
+            position: absolute;
+            left: -15px;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(0, 198, 255, 0.08) 0%, rgba(255, 215, 0, 0.08) 100%);
+            border-left: 5px solid var(--accent-color);
+            padding: 25px;
+            border-radius: 12px;
+            margin: 25px 0;
+        }
+
+        .highlight-box strong {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        /* Game Features Section */
+        .game-features-section {
+            margin-top: 60px;
+        }
+
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .game-feature-card {
+            background: white;
+            border-radius: 25px;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: var(--card-shadow);
+            transition: var(--transition);
+            border: 2px solid transparent;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
+        }
+
+        .game-feature-card:hover {
+            transform: translateY(-15px);
+            border-color: var(--accent-color);
+            box-shadow: 0 30px 60px rgba(0, 198, 255, 0.15);
+        }
+
+        .game-icon-container {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 25px;
+            border-radius: 20px;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border: 2px solid rgba(0, 198, 255, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+            transition: var(--transition);
+        }
+
+        .game-feature-card:hover .game-icon-container {
+            border-color: var(--accent-color);
+            background: linear-gradient(135deg, rgba(0, 198, 255, 0.1) 0%, rgba(255, 215, 0, 0.1) 100%);
+            transform: scale(1.1);
+        }
+
+        .game-icon-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 12px;
+        }
+
+        .game-feature-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        .game-feature-desc {
+            color: #666;
+            font-size: 1rem;
+            line-height: 1.6;
+            flex-grow: 1;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            border-radius: 30px;
+            padding: 60px;
+            text-align: center;
+            color: white;
+            margin: 80px 0;
+            box-shadow: var(--card-shadow);
+        }
+
+        .contact-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 25px;
+            color: white;
+        }
+
+        .contact-subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 700px;
+            margin: 0 auto 40px;
+            line-height: 1.7;
+        }
+
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .contact-item {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 30px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: var(--transition);
+        }
+
+        .contact-item:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-10px);
+        }
+
+        .contact-icon {
+            font-size: 2.5rem;
+            color: var(--accent-color);
+            margin-bottom: 20px;
+        }
+
+        .contact-label {
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            opacity: 0.9;
+        }
+
+        .contact-value {
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+        .email-link {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: var(--transition);
+            font-weight: 600;
+        }
+
+        .email-link:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--secondary-color);
+            color: white;
+            padding: 60px 0 40px;
+            border-radius: 30px 30px 0 0;
+            box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer-content {
+            text-align: center;
+        }
+
+        .developer-info {
+            margin-bottom: 40px;
+        }
+
+        .developer-name {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            margin-bottom: 15px;
+        }
+
+        .developer-tagline {
+            font-size: 1.2rem;
+            opacity: 0.8;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin: 40px 0;
+            flex-wrap: wrap;
+        }
+
+        .footer-link {
+            color: #ccc;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 25px;
+            border-radius: 25px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-link:hover {
+            color: white;
+            background: rgba(0, 198, 255, 0.2);
+            transform: translateY(-5px);
+            border-color: var(--accent-color);
+        }
+
+        .footer-link i {
+            font-size: 1.2rem;
+        }
+
+        .copyright {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #888;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .copyright a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .copyright a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .game-title {
+                font-size: 3rem;
+            }
+            
+            .page-title {
+                font-size: 2.5rem;
+            }
+            
+            .content-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .games-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                padding: 40px 0;
+            }
+            
+            .game-title {
+                font-size: 2.5rem;
+            }
+            
+            .page-title {
+                font-size: 2rem;
+            }
+            
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .games-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-section {
+                padding: 40px 30px;
+            }
+            
+            .contact-info {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+            
+            .footer-links {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+            
+            .content-card {
+                padding: 30px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .game-title {
+                font-size: 2rem;
+            }
+            
+            .page-title {
+                font-size: 1.8rem;
+            }
+            
+            .game-icon {
+                width: 120px;
+                height: 120px;
+            }
+            
+            .card-header {
+                flex-direction: column;
+                text-align: center;
+                gap: 15px;
+            }
+            
+            .card-icon {
+                width: 50px;
+                height: 50px;
+                font-size: 1.5rem;
+            }
+            
+            .card-title {
+                font-size: 1.6rem;
+            }
+        }
+
+        /* Animation Classes */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: var(--gradient-accent);
+            color: black;
+            border: none;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: var(--transition);
+            box-shadow: 0 10px 30px rgba(0, 198, 255, 0.4);
+            z-index: 100;
+            display: none;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-10px) scale(1.1);
+            box-shadow: 0 20px 40px rgba(0, 198, 255, 0.6);
+        }
+
+        .back-to-top.show {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="game-icon fade-in">
+                    <img src="https://raw.githubusercontent.com/nadeemgamingstudio/brickgame/refs/heads/main/Icon.png" alt="Brick Game Icon">
+                </div>
+                <h1 class="game-title fade-in">BRICK GAME</h1>
+                <h2 class="page-title fade-in">Privacy Policy</h2>
+                <p class="last-updated fade-in">Last Updated: <span class="effective-date">January 2, 2025</span></p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="content-grid">
+                <!-- Privacy Policy Card -->
+                <div class="content-card fade-in">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 class="card-title">Privacy Policy Overview</h3>
+                    </div>
+                    <div class="card-content">
+                        <p>Welcome to Brick Game! This Privacy Policy explains how we handle information when you use our mobile application. We are committed to protecting your privacy and ensuring a safe gaming experience.</p>
+                        
+                        <div class="highlight-box">
+                            <strong>Important Notice:</strong> Brick Game is designed with privacy in mind. We do not collect any personal information from our users. Our goal is to provide pure entertainment without compromising your privacy.
+                        </div>
+                        
+                        <p>By using Brick Game, you agree to the terms outlined in this Privacy Policy. We may update this policy from time to time, and we will notify you of any significant changes.</p>
+                    </div>
+                </div>
+
+                <!-- Information Collection Card -->
+                <div class="content-card fade-in">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3 class="card-title">Information Collection</h3>
+                    </div>
+                    <div class="card-content">
+                        <p>Brick Game collects minimal information necessary for optimal gameplay:</p>
+                        
+                        <ul>
+                            <li><strong>Game Progress Data:</strong> Scores, levels, and settings are stored locally on your device</li>
+                            <li><strong>Anonymous Usage Statistics:</strong> Basic analytics to improve app performance (non-identifiable)</li>
+                            <li><strong>Device Information:</strong> Basic device specs for compatibility optimization</li>
+                        </ul>
+                        
+                        <div class="highlight-box">
+                            <strong>We DO NOT Collect:</strong> Personal identification information, email addresses, contact lists, location data, payment information, or any sensitive personal data.
+                        </div>
+                        
+                        <p>All game data is stored locally on your device and is never transmitted to external servers unless specifically required for app functionality.</p>
+                    </div>
+                </div>
+
+                <!-- Third-Party Services Card -->
+                <div class="content-card fade-in">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-external-link-alt"></i>
+                        </div>
+                        <h3 class="card-title">Third-Party Services</h3>
+                    </div>
+                    <div class="card-content">
+                        <p>Brick Game uses Google Admob for displaying advertisements. Google Admob may collect:</p>
+                        
+                        <ul>
+                            <li>Device model and operating system version</li>
+                            <li>Advertising ID (resettable by user)</li>
+                            <li>IP address (anonymized)</li>
+                            <li>App usage statistics</li>
+                            <li>Crash reports for debugging</li>
+                        </ul>
+                        
+                        <div class="highlight-box">
+                            <strong>Google Admob Privacy Policy:</strong> You can review Google's privacy practices at <a href="https://policies.google.com/privacy" target="_blank" style="color: var(--primary-color); text-decoration: none; font-weight: 600;">https://policies.google.com/privacy</a>
+                        </div>
+                        
+                        <p>We have implemented appropriate measures to ensure that third-party services comply with privacy standards. However, we are not responsible for their independent privacy practices.</p>
+                    </div>
+                </div>
+
+                <!-- Data Security Card -->
+                <div class="content-card fade-in">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <h3 class="card-title">Data Security</h3>
+                    </div>
+                    <div class="card-content">
+                        <p>We take data security seriously and have implemented appropriate measures:</p>
+                        
+                        <ul>
+                            <li>All game data is stored locally on your device</li>
+                            <li>No personal data transmission occurs during gameplay</li>
+                            <li>No login or account creation required</li>
+                            <li>Advertising data is handled by Google's secure infrastructure</li>
+                            <li>Regular security assessments and updates</li>
+                        </ul>
+                        
+                        <div class="highlight-box">
+                            <strong>Security Note:</strong> While we implement reasonable security measures, no method of electronic transmission or storage is 100% secure. We continuously work to protect your information to the best of our ability.
+                        </div>
+                        
+                        <p>If you have concerns about data security, please contact us immediately.</p>
+                    </div>
+                </div>
+
+                <!-- Children's Privacy Card -->
+                <div class="content-card fade-in">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-child"></i>
+                        </div>
+                        <h3 class="card-title">Children's Privacy</h3>
+                    </div>
+                    <div class="card-content">
+                        <p>Brick Game is suitable for players of all ages:</p>
+                        
+                        <ul>
+                            <li>No age restriction for gameplay</li>
+                            <li>No collection of personal information from children</li>
+                            <li>Parental guidance recommended for in-app advertisements</li>
+                            <li>Simple, non-violent gameplay suitable for all age groups</li>
+                            <li>Educational value in problem-solving and reflexes</li>
+                        </ul>
+                        
+                        <p>If you are a parent or guardian and believe your child has provided personal information through our app, please contact us immediately so we can take appropriate action.</p>
+                        
+                        <div class="highlight-box">
+                            <strong>For Parents:</strong> We encourage parents to monitor their children's app usage and enable appropriate device-level restrictions for advertising and in-app purchases.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- User Rights Card -->
+                <div class="content-card fade-in">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-user-check"></i>
+                        </div>
+                        <h3 class="card-title">Your Rights & Controls</h3>
+                    </div>
+                    <div class="card-content">
+                        <p>As a Brick Game user, you have the following rights:</p>
+                        
+                        <ul>
+                            <li>Access and view your locally stored game data</li>
+                            <li>Reset game progress at any time</li>
+                            <li>Control advertising preferences through device settings</li>
+                            <li>Uninstall the app to remove all local data</li>
+                            <li>Opt-out of personalized ads via device settings</li>
+                        </ul>
+                        
+                        <div class="highlight-box">
+                            <strong>Data Deletion:</strong> Since all data is stored locally on your device, uninstalling the app will remove all game data. Cloud backup is not available as we don't collect personal information.
+                        </div>
+                        
+                        <p>For any privacy-related requests or questions, please contact us using the information provided below.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Game Features Section -->
+            <div class="game-features-section">
+                <h3 style="font-family: 'Montserrat', sans-serif; font-size: 2.2rem; color: var(--primary-color); text-align: center; margin-bottom: 40px;">
+                    <i class="fas fa-gamepad" style="color: var(--accent-color); margin-right: 15px;"></i>
+                    Featured Games in Brick Game
+                </h3>
+                
+                <div class="games-grid">
+                    <!-- Tetris Game -->
+                    <div class="game-feature-card fade-in">
+                        <div class="game-icon-container">
+                            <img src="https://raw.githubusercontent.com/nadeemgamingstudio/brickgame/refs/heads/main/TETRIS.png" alt="Tetris Game">
+                        </div>
+                        <h4 class="game-feature-title">TETRIS</h4>
+                        <p class="game-feature-desc">The timeless block puzzle game. Arrange falling tetrominoes to complete lines and prevent the stack from reaching the top.</p>
+                    </div>
+                    
+                    <!-- Car Race Game -->
+                    <div class="game-feature-card fade-in">
+                        <div class="game-icon-container">
+                            <img src="https://raw.githubusercontent.com/nadeemgamingstudio/brickgame/refs/heads/main/CarRace.png" alt="Car Race Game">
+                        </div>
+                        <h4 class="game-feature-title">CAR RACE</h4>
+                        <p class="game-feature-desc">High-speed highway adventure! Navigate through traffic, avoid obstacles, and test your reflexes in this thrilling arcade racer.</p>
+                    </div>
+                    
+                    <!-- Snake Game -->
+                    <div class="game-feature-card fade-in">
+                        <div class="game-icon-container">
+                            <img src="https://raw.githubusercontent.com/nadeemgamingstudio/brickgame/refs/heads/main/SNAKE.png" alt="Snake Game">
+                        </div>
+                        <h4 class="game-feature-title">SNAKE</h4>
+                        <p class="game-feature-desc">The classic mobile game reborn! Guide your snake to eat food, grow longer, and avoid walls and obstacles in this addictive challenge.</p>
+                    </div>
+                    
+                    <!-- Shooter Game -->
+                    <div class="game-feature-card fade-in">
+                        <div class="game-icon-container">
+                            <img src="https://raw.githubusercontent.com/nadeemgamingstudio/brickgame/refs/heads/main/SHOOTER.png" alt="Shooter Game">
+                        </div>
+                        <h4 class="game-feature-title">SHOOTER</h4>
+                        <p class="game-feature-desc">Defend your base in intense tank warfare! Control your turret, shoot down enemy targets, and survive endless waves of attacks.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="contact-section fade-in">
+                <h3 class="contact-title">Contact Us</h3>
+                <p class="contact-subtitle">If you have any questions, concerns, or suggestions regarding this Privacy Policy or Brick Game, please don't hesitate to contact us.</p>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div class="contact-label">Developer</div>
+                        <div class="contact-value">Mr. Nadeem</div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-label">Email Address</div>
+                        <div class="contact-value">
+                            <a href="mailto:nadeemgamer180@gmail.com" class="email-link">nadeemgamer180@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <div class="contact-label">Game Title</div>
+                        <div class="contact-value">Brick Game</div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <div class="contact-label">Last Updated</div>
+                        <div class="contact-value">January 2, 2025</div>
+                    </div>
+                </div>
+                
+                <p style="margin-top: 40px; opacity: 0.8; font-size: 1.1rem;">
+                    We typically respond to inquiries within 24-48 hours. For urgent matters, please indicate "URGENT" in your email subject line.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="developer-info">
+                    <h3 class="developer-name">Nadeem Gaming Studio</h3>
+                    <p class="developer-tagline">Creating premium gaming experiences that combine nostalgia with modern innovation. We believe in fun, privacy, and quality entertainment for everyone.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <a href="https://nadeemgamingstudio.github.io/" target="_blank" class="footer-link">
+                        <i class="fas fa-home"></i> Official Website
+                    </a>
+                    
+                    <a href="https://play.google.com/store/apps/details?id=com.nadeemgs.brickgame" target="_blank" class="footer-link">
+                        <i class="fab fa-google-play"></i> Google Play Store
+                    </a>
+                    
+                    <a href="#contact" class="footer-link">
+                        <i class="fas fa-envelope"></i> Contact Support
+                    </a>
+                </div>
+                
+                <div class="copyright">
+                    <p>© <span id="currentYear">2025</span> Nadeem Gaming Studio. All Rights Reserved.</p>
+                    <p>Brick Game and all related content are trademarks of <a href="https://nadeemgamingstudio.github.io/" target="_blank">Nadeem Gaming Studio</a>.</p>
+                    <p style="margin-top: 15px; font-size: 0.95rem; color: #777;">
+                        This Privacy Policy is effective as of January 2, 2025. We reserve the right to update or modify this policy at any time. 
+                        Continued use of Brick Game after any changes constitutes acceptance of the modified Privacy Policy.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Set current year
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Back to top button
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('show');
+            } else {
+                backToTopButton.classList.remove('show');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Animate elements on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all fade-in elements
+        document.querySelectorAll('.fade-in').forEach(element => {
+            observer.observe(element);
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if (href !== '#') {
+                    e.preventDefault();
+                    const targetElement = document.querySelector(href);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            });
+        });
+
+        // Add hover effects to cards
+        const cards = document.querySelectorAll('.content-card, .game-feature-card, .contact-item');
+        cards.forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.cursor = 'pointer';
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                card.style.cursor = 'default';
+            });
+        });
+
+        // Preload images for better performance
+        function preloadImages() {
+            const imageUrls = [
+                'https://raw.githubusercontent.com/nadeemgamingstudio/brickgame/refs/heads/main/Icon.png',
+                'https://raw.githubusercontent.com/nadeemgamingstudio/brickgame/refs/heads/main/TETRIS.png',
+                'https://raw.githubusercontent.com/nadeemgamingstudio/brickgame/refs/heads/main/CarRace.png',
+                'https://raw.githubusercontent.com/nadeemgamingstudio/brickgame/refs/heads/main/SNAKE.png',
+                'https://raw.githubusercontent.com/nadeemgamingstudio/brickgame/refs/heads/main/SHOOTER.png'
+            ];
+            
+            imageUrls.forEach(url => {
+                const img = new Image();
+                img.src = url;
+            });
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            preloadImages();
+            
+            // Add active state to current page link
+            const currentPage = window.location.pathname;
+            const links = document.querySelectorAll('.footer-link');
+            links.forEach(link => {
+                if (link.getAttribute('href') === currentPage) {
+                    link.style.background = 'rgba(0, 198, 255, 0.3)';
+                    link.style.borderColor = 'var(--accent-color)';
+                }
+            });
+            
+            // Add click effect to cards
+            const contentCards = document.querySelectorAll('.content-card');
+            contentCards.forEach(card => {
+                card.addEventListener('click', function() {
+                    this.style.transform = 'translateY(-5px) scale(1.02)';
+                    setTimeout(() => {
+                        this.style.transform = '';
+                    }, 300);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
